@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+header{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.iconoMenu{
+	width: 3%;
+	margin: 20px 0 0 20px;
+}
+
+/*SECTION-FONDO*/
+.fondo{
+	background-image: url(../image/dos.jpg);
+	background-size: cover;
+	margin-bottom: 0;
+	height: 100vh;
+}
+.main{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	right: 2%;
+	color: white;
+	font-size: 1.8rem;
+}
+.main-title1{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 46%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.main1{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.main2{
+	top: 0;
+}
+.main3{
+	top: 5%;
+}
+.main4{
+	top: 10%;
+}
+.especia{
+	color: white;
+	font-size: 15px;
+	float: left;
+}
+.nombre{
+	width: 30%;
+}
+
+
+/*MENU*/
+.logoColor{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.logoMenu{
+	width: 50%;
+}
+.menu li a {
+	color: #5C0120;
+	font-size: 20px;
+	text-decoration: none;
+}
+.linea{
+	border: 1px solid #5C0120;
+	margin: 30px 10px;
+}
+
+/*ABOUT ME*/
+.aboutMeMenu{
+	text-align: center;
+	background-color: #B3001B;
+	padding: 21% 8%;
+	height: 100vh;
+}
+.aboutMeMenuCambio{
+	padding: 0;
+}
+.informacionAbout{
+	color: white;
+	font-size: 40px;
+}
+
+.colorBlue{
+	color: white;
+	font-size: 1.5rem;
+	margin: 40px 100px;
+}
+.colorBlue::selection{
+  background: #2E294E;
+  color: white;
+}
+.aboutBotton{
+  padding: 14px 80px;
+  background-color: #2E294E;
+  color: white;
+  font-size: 18px;
+}
+.info{
+	padding: 150px 0 30px 0;
+}
+.info:hover{
+	height: 670px;
+	background-color: rgba(46,41,78,0.8);
+	transition: background-color 0.25s;
+	-webkit-transition: 1.2s;
+}
+.contenedorFoto{
+	width: 100%;
+}
+.foto{
+	width: 100%;
+}
+.frase{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	font-size: 16px;
+}
+.cerrarBoton{
+	padding: 12px 48px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin:30px 0;
+	color: white;
+	font-size: 18px;
+}
+/*HOVER*/
+.overlay:hover .frase{
+	opacity: 0.8;
+	background-color: red;
+	color: white;
+	padding:40px 10px;
+	transition: all 0.5s ease;
+	text-align: center;
+	width: 93%;
+	height: 100%;
+}
+.iconoInfo{
+	font-size: 40px;
+	margin-bottom: 4px;
+}
+
+
+/*ABOUT ME*/
+/*.aboutMeMenu{
+	text-align: center;
+	background-color: 
+}
+.bt{
+	padding:18% 20%;
+	text-align: center;
+}
+.videoPlay{
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+}
+.informacion{
+	font-size: 34px;
+	font-weight: bold;
+	color: white;
+	height: 140px;
+	text-shadow: 0 0 30px black;
+}
+.colorBlue{
+	color: white;
+	font-size: 1.5rem;
+	margin: 0 100px;
+}
+.colorBlue::selection{
+  background: #2E294E;
+  color: white;
+}
+.aboutBotton{
+  padding: 14px 80px;
+  background-color: #2E294E;
+  color: white;
+  font-size: 18px;
+}
+.info{
+	padding: 150px 0 30px 0;
+}
+.info:hover{
+	height: 670px;
+	background-color: rgba(46,41,78,0.8);
+	transition: background-color 0.25s;
+	-webkit-transition: 1.2s;
+}
+.contenedorFoto{
+	width: 100%;
+	margin-bottom: 44px;
+}
+.foto{
+	width: 100%;
+}
+.frase{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	font-size: 16px;
+}
+.cerrarBoton{
+	padding: 12px 48px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin:30px 0;
+	color: white;
+	font-size: 18px;
+}
+/*HOVER*/
+/*.overlay:hover .frase{
+	opacity: 0.8;
+	background-color: red;
+	color: white;
+	padding:50px 16px;
+	transition: all 0.5s ease;
+	text-align: center;
+	width: 93%;
+}
+.iconoInfo{
+	font-size: 40px;
+	margin-bottom: 4px;
+}*/
+
+/*PROYECTOS*/
+.proyectos{
+	background-color: black;
+}
+.tituloProyecto{
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/*CONTACTAME*/
+.contactame{
+	background-image: url(../image/fondo-contacto-08.png);
+	text-align: center;
+	color: black;
+	height: 100vh;
+}
+.tituloContactame{
+	margin:15px 0;
+}
+.contactameBoton{
+	padding: 14px 34px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin:10px 0;
+}
+.textoFooter{
+	margin: 0 80px;
+}
+.iconoFooter{
+	font-size: 22px;
+	margin: 0 8px;
+	text-decoration:none;
+	color: white;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/*FOOTER*/
+footer{
+	background-color: #2E294E;
+	padding: 8px 4px;
+	color: white;
+	text-align: center;
+}
+.nombreFooter{
+	margin: 10px 0;
+}
+
+
+.circuloIcono{
+	width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HIDDEN*/
+.hidden{
+	display: none;
+}
