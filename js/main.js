@@ -10,7 +10,6 @@
 //       $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent   
 //     }
 //   });
-
   
 $('.button-collapse').sideNav({
       menuWidth: 240, // Default is 240
@@ -28,22 +27,13 @@ window.addEventListener("load", function(){
   var infoAbout = document.getElementById("infoAbout");
   var aboutBotton = document.getElementById("aboutBotton");
   var aboutMeMenu = document.getElementById("aboutMeMenu");
-  var informacionAbout = document.getElementById("informacionAbout");
+  var informacionAbout = document.getElementById("informacionAbout")
 
-   // iconoMenu.addEventListener("click", menu);
-   // iconoCruz.addEventListener("click", menuHidden);
    botonCerrar.addEventListener("click", aboutHidden);
    aboutBotton.addEventListener("mouseover", aboutMe);
 
 });
 
-// function menu(e){
-//   e.preventDefault();
-//   menuDesplegable.classList.remove("hidden");
-// }
-// function menuHidden(){
-//   menuDesplegable.classList.add("hidden");
-// }
 function aboutMe(){
   infoAbout.classList.remove("hidden");
   aboutBotton.classList.add("hidden");
@@ -83,6 +73,16 @@ var texto = "Mi nombre es Carol Madeleine y sé que el diseño no tiene límites
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 maquina("informacionAbout",texto,100);
 
+window.addEventListener("scroll", function(){
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            // mapa.style.display = "block";
+          $(".aboutMeMenu").addClass("block");  
+        } else{
+          $(".aboutMeMenu").addClass("hidden"); 
+          // mapa.style.display ="none";
+        };
+
+});
 
 
 
