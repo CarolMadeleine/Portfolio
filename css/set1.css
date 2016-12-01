@@ -29,7 +29,7 @@
 	max-width: 480px;
 	max-height: 360px;
 	width: 43%;
-	background: #3085a3;
+	background: #5C0120;
 	text-align: center;
 	cursor: pointer;
 }
@@ -184,7 +184,7 @@ figure.effect-sadie h2 {
 	top: 50%;
 	left: 0;
 	width: 100%;
-	color: #484c61;
+	color: #5C0120;
 	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
 	transition: transform 0.35s, color 0.35s;
 	-webkit-transform: translate3d(0,-50%,0);

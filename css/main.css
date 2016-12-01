@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+body{
+	background-color: #5C0120;
+}
 
 /*Header*/
 header{
@@ -13,8 +16,8 @@ header{
 	z-index: 100;
 }
 .iconoMenu{
-	width: 3%;
-	margin: 20px 0 0 20px;
+	width: 32px;
+	margin: 26px 0 0 20px;
 }
 
 /*SECTION-FONDO*/
@@ -93,7 +96,6 @@ header{
 /*ABOUT ME*/
 .aboutMeMenu{
 	text-align: center;
-	background-color: #5C0120;
 	padding: 21% 8%;
 	height: 100vh;
 }
@@ -178,26 +180,23 @@ header{
 .contenedorFoto{
 	width: 100%;
 	margin-bottom: 44px;
+	text-align: center;
 }
 .foto{
 	width: 100%;
 }
-
+.cerrarBoton{
+	padding: 12px 48px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin:30px 0;
+	color: white;
+	font-size: 18px;
+}
 
 /*.aboutMeMenu{
-	text-align: center;
-	background-color: 
-}
-.bt{
-	padding:18% 20%;
-	text-align: center;
-}
-.videoPlay{
-	width: 100%;
-	z-index: -1;
-	position: absolute;
-	left: 0px;
-}
+
 .informacion{
 	font-size: 34px;
 	font-weight: bold;
@@ -236,15 +235,8 @@ header{
 	top: 0;
 	font-size: 16px;
 }
-.cerrarBoton{
-	padding: 12px 48px;
-	background-color: transparent;
-	border-radius: 4px;
-	border: 1px solid white;
-	margin:30px 0;
-	color: white;
-	font-size: 18px;
-}
+
+
 /*HOVER*/
 /*.overlay:hover .frase{
 	opacity: 0.8;
@@ -260,16 +252,80 @@ header{
 	margin-bottom: 4px;
 }*/
 
+
 /*PROYECTOS*/
 .proyectos{
 	background-color: black;
+	padding: 22px 0;
 }
 .tituloProyecto{
 	color: white;
-	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
 }
+
+
+/*HABILIDADES*/
+.habilidades{
+	height: 100vh;
+	text-align: center;
+	padding: 30px 0;
+}
+.logoContenedor{
+	height: 220px;
+    max-width: 300px;
+}
+.logo-habilidades{
+	position: absolute;
+    z-index: -2;
+}
+.contenedor{
+	height: 72%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: url(../image/habilidades/giphy2.gif);
+}
+.illustrator, .photoshop, .indesing, .css, .html{
+	width: 100%;
+    position: relative;
+    z-index: -2;
+}
+.illustrator{
+    background-color: #FF7F18;
+    /*height: 69px;
+    bottom: 76px;*/
+    height: 3.9rem;
+    bottom: 58px;
+}
+.photoshop{
+    background-color: blue;
+    height: 59px;
+    bottom: 60px;
+}
+.indesing{
+    background-color: #EB43A3;
+    height: 59px;
+    bottom: 60px;
+}
+.html{
+    background-color: #EB43A3;
+    height: 59px;
+    bottom: 60px;
+}
+.css{
+    background-color: #EB43A3;
+    height: 59px;
+    bottom: 60px;
+}
+.botton-o{
+	padding: 6px 14px;
+    margin:10px;
+}
+	
+
+
 
 
 /*CONTACTAME*/
@@ -280,27 +336,36 @@ header{
 	color: white;
 }
 .opacityContac{
-	opacity: 0.6;
+	opacity: 0.8;
 	background-color: #5C0120;
 	height: 100vh;
 }
 .contacto{
-	margin:100px 0;
+	margin:60px 0 0 0;
 }
 .tituloContactame{
 	margin:30px 0;
+	font-size: 40px;
 }
 .textoContactame{
-	margin:20px;
+	margin:24px;
 	font-size: 18px;
 }
+.textoContac-2{
+	margin:18px 0;
+	font-size: 16px;
+}
 .iconoFooter{
-	font-size: 22px;
+	font-size: 34px;
 	margin: 0 8px;
 	text-decoration:none;
 	color: white;
 	margin-bottom: 10px;
 	text-align: center;
+}
+.iconoCon{
+	font-size: 24px;
+	margin: 0 8px;
 }
 .contactameBoton{
 	padding: 14px 34px;
@@ -308,12 +373,16 @@ header{
 	border-radius: 4px;
 	border: 1px solid white;
 	margin:10px 0;
-}
-.contactameBoton:hover{
-	background-color: #5C0120;
 	color: white;
 }
-
+.contactameBoton a{
+	text-decoration: none;
+	color: white;
+}
+/*.contactameBoton:hover {
+	background-color: #5C0120;
+}
+*/
 
 /*FOOTER*/
 footer{

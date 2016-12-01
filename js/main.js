@@ -19,6 +19,17 @@ $('.button-collapse').sideNav({
     }
   );
 
+$(document).ready(function(){
+    $(".on").click(function(){
+        $(".contenedor").slideDown(0);
+            $(".contenedor").slideToggle(3000);
+    $(".off").click(function(){
+        $(".contenedor").stop();
+            $(".contenedor").slideDown(2000);
+        });
+    });
+});
+
 window.addEventListener("load", function(){
   var iconoMenu = document.getElementById("iconoMenu");
   var iconoCruz = document.getElementById("iconoCruz");
@@ -30,7 +41,7 @@ window.addEventListener("load", function(){
   var informacionAbout = document.getElementById("informacionAbout")
 
    botonCerrar.addEventListener("click", aboutHidden);
-   aboutBotton.addEventListener("mouseover", aboutMe);
+   aboutBotton.addEventListener("click", aboutMe);
 
 });
 
@@ -69,20 +80,20 @@ function maquina(contenedor,texto,intervalo){
       }},intervalo);
 };
 
-var texto = "Mi nombre es Carol Madeleine y sé que el diseño no tiene límites, donde sea que lo hagamos";
+var texto = "Mi nombre es Carol Madeleine y creo que el diseño no tiene límites, donde sea que lo hagamos";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 maquina("informacionAbout",texto,100);
 
-window.addEventListener("scroll", function(){
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            // mapa.style.display = "block";
-          $(".aboutMeMenu").addClass("block");  
-        } else{
-          $(".aboutMeMenu").addClass("hidden"); 
-          // mapa.style.display ="none";
-        };
 
-});
+// window.addEventListener("scroll", function(){
+//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+//             // mapa.style.display = "block";
+//           $(".aboutMeMenu").addClass("block");  
+//         } else{
+//           $(".aboutMeMenu").addClass("hidden"); 
+//           // mapa.style.display ="none";
+//         };
 
+// });
 
 
