@@ -1,35 +1,3 @@
-// $(document).ready(function(){
-//   $(window).scroll(function(){ // check if scroll event happened
-//     if($(document).scrollTop() == 0){
-//       $(".logoNavbar").css("display", "none");
-//     }
-//     else if($(document).scrollTop() > 50){ // check if user scrolled more than 50 from top of the browser window
-//       $(".navbar-fixed-top").css("background-color", "#282c37"); 
-//       $(".logoNavbar").css("display", "inline-block");// if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-//     }else{
-//       $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent   
-//     }
-//   });
-  
-$('.button-collapse').sideNav({
-      menuWidth: 240, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens
-    }
-  );
-
-$(document).ready(function(){
-    $(".on").click(function(){
-        $(".contenedor").slideDown(0);
-            $(".contenedor").slideToggle(3000);
-    $(".off").click(function(){
-        $(".contenedor").stop();
-            $(".contenedor").slideDown(2000);
-        });
-    });
-});
-
 window.addEventListener("load", function(){
   var iconoMenu = document.getElementById("iconoMenu");
   var iconoCruz = document.getElementById("iconoCruz");
@@ -38,7 +6,8 @@ window.addEventListener("load", function(){
   var infoAbout = document.getElementById("infoAbout");
   var aboutBotton = document.getElementById("aboutBotton");
   var aboutMeMenu = document.getElementById("aboutMeMenu");
-  var informacionAbout = document.getElementById("informacionAbout")
+  var informacionAbout = document.getElementById("informacionAbout");
+  var textoAbout = document.getElementById("textoAbout");
 
    botonCerrar.addEventListener("click", aboutHidden);
    aboutBotton.addEventListener("click", aboutMe);
@@ -47,13 +16,13 @@ window.addEventListener("load", function(){
 
 function aboutMe(){
   infoAbout.classList.remove("hidden");
-  aboutBotton.classList.add("hidden");
+  textoAbout.classList.add("hidden");
   informacionAbout.classList.add("hidden");
   aboutMeMenu.classList.add("aboutMeMenuCambio");
 }
 function aboutHidden(){
   infoAbout.classList.add("hidden");
-  aboutBotton.classList.remove("hidden");
+  textoAbout.classList.remove("hidden");
   informacionAbout.classList.remove("hidden");
   aboutMeMenu.classList.remove("aboutMeMenuCambio");
 }
@@ -85,6 +54,45 @@ var texto = "Mi nombre es Carol Madeleine y creo que el diseño no tiene límite
 maquina("informacionAbout",texto,100);
 
 
+$('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+
+$(document).ready(function(){
+    $(".on").click(function(){
+        $(".contenedor").slideDown(0);
+            $(".contenedor").slideToggle(3000);
+    $(".off").click(function(){
+        $(".contenedor").stop();
+            $(".contenedor").slideDown(2000);
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // window.addEventListener("scroll", function(){
 //     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
 //             // mapa.style.display = "block";
@@ -97,3 +105,16 @@ maquina("informacionAbout",texto,100);
 // });
 
 
+
+// $(document).ready(function(){
+//   $(window).scroll(function(){ // check if scroll event happened
+//     if($(document).scrollTop() == 0){
+//       $(".logoNavbar").css("display", "none");
+//     }
+//     else if($(document).scrollTop() > 50){ // check if user scrolled more than 50 from top of the browser window
+//       $(".navbar-fixed-top").css("background-color", "#282c37"); 
+//       $(".logoNavbar").css("display", "inline-block");// if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+//     }else{
+//       $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent   
+//     }
+//   });

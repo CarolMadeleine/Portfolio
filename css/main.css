@@ -6,7 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-	background-color: #5C0120;
+	background-color: #6C131D;
 }
 
 /*Header*/
@@ -271,6 +271,12 @@ header{
 	text-align: center;
 	padding: 30px 0;
 }
+.tituloHabilidades{
+	margin:30px 0 40px 0;
+	/*font-size: 40px;*/
+	color: white;
+	font-weight: bold;
+}
 .logoContenedor{
 	height: 220px;
     max-width: 300px;
@@ -280,7 +286,7 @@ header{
     z-index: -2;
 }
 .contenedor{
-	height: 72%;
+	height: 71%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -404,23 +410,7 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*HIDDEN
+/*HIDDEN*/
 .block{
 	display: block;
 }
