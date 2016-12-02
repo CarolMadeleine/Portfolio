@@ -27,7 +27,11 @@ header{
 	margin-bottom: 0;
 	height: 100vh;
 }
-.main{
+#demo-canvas{
+	height: 614px;
+	width: 100%;
+}
+.main{ 
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -96,7 +100,7 @@ header{
 /*ABOUT ME*/
 .aboutMeMenu{
 	text-align: center;
-	padding: 21% 8%;
+	padding: 20% 8%;
 	height: 100vh;
 }
 .aboutMeMenuCambio{
@@ -113,7 +117,7 @@ header{
 	margin: 40px 100px;
 }
 .colorBlue::selection{
-  background: #2E294E;
+  background: #6C131D;
   color: white;
 }
 .aboutBotton{
@@ -143,8 +147,6 @@ header{
 .foto{
 	width: 100%;
 }
-	font-size: 16px;
-}
 .cerrarBoton{
 	padding: 12px 48px;
 	background-color: transparent;
@@ -154,6 +156,7 @@ header{
 	color: white;
 	font-size: 18px;
 }
+
 /*HOVER*/
 .overlay:hover .frase{
 	opacity: 0.8;
@@ -193,16 +196,6 @@ header{
 	margin:30px 0;
 	color: white;
 	font-size: 18px;
-}
-
-/*.aboutMeMenu{
-
-.informacion{
-	font-size: 34px;
-	font-weight: bold;
-	color: white;
-	height: 140px;
-	text-shadow: 0 0 30px black;
 }
 .colorBlue{
 	color: white;
@@ -256,7 +249,7 @@ header{
 /*PROYECTOS*/
 .proyectos{
 	background-color: black;
-	padding: 22px 0;
+	padding: 20px 0;
 }
 .tituloProyecto{
 	color: white;
@@ -269,16 +262,16 @@ header{
 .habilidades{
 	height: 100vh;
 	text-align: center;
-	padding: 30px 0;
+	padding: 16px 0;
 }
-.tituloHabilidades{
-	margin:30px 0 40px 0;
-	/*font-size: 40px;*/
+/*.tituloHabilidades{
+	margin:60px 0 30px 0;
+	font-size: 40px;
 	color: white;
 	font-weight: bold;
-}
+}*/
 .logoContenedor{
-	height: 220px;
+	height: 240px;
     max-width: 300px;
 }
 .logo-habilidades{
@@ -286,52 +279,93 @@ header{
     z-index: -2;
 }
 .contenedor{
-	height: 71%;
     width: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
     background-image: url(../image/habilidades/giphy2.gif);
 }
-.illustrator, .photoshop, .indesing, .css, .html{
+
+/*contenedores-gift-diseño*/
+.contenedor-illus{
+	height: 56%;
+}
+.contenedor-pho{
+	height: 60%;
+}
+.contenedor-indes{
+	height: 64%;
+}
+.contenedor-pre{
+	height: 76%;
+}
+/*contenedores-gift-web*/
+.contenedor-html{
+	height: 58%;
+}
+.contenedor-css{
+	height: 60%;
+}
+.contenedor-javascript{
+	height: 74%;
+}
+.contenedor-jquery{
+	height: 78%;
+}
+
+.illustrator, .photoshop, .indesing, .premier, .css, .html, .javascript, .jquery{
 	width: 100%;
     position: relative;
     z-index: -2;
 }
 .illustrator{
-    background-color: #FF7F18;
-    /*height: 69px;
-    bottom: 76px;*/
-    height: 3.9rem;
-    bottom: 58px;
+    background-color: #F87316;
+    height: 9.8rem;
+    bottom: 148px;
 }
 .photoshop{
-    background-color: blue;
-    height: 59px;
-    bottom: 60px;
+    background-color: #001D26;
+    height: 8rem;
+    bottom: 122px;
 }
 .indesing{
-    background-color: #EB43A3;
-    height: 59px;
-    bottom: 60px;
+    background-color: #FF408C;
+    height: 6.5rem;
+    bottom: 104px;
+}
+.premier{
+    background-color: #D757FF;
+    height: 3rem;
+    bottom: 56px;
 }
 .html{
-    background-color: #EB43A3;
-    height: 59px;
-    bottom: 60px;
+    background-color: #E44D26;
+    height: 9.8rem;
+    bottom: 154px;
 }
 .css{
-    background-color: #EB43A3;
-    height: 59px;
-    bottom: 60px;
+    background-color: #1572B6;
+    height: 9rem;
+    bottom: 150px;
+}
+.javascript{
+    background-color: #F8DC3D;
+    height: 3.8rem;
+    bottom: 66px;
+}
+.jquery{
+    background-color: #0868AB;
+    height: 2.8rem;
+    bottom: 52px;
+}
+.botones-hab{
+	margin-left: 18px;
 }
 .botton-o{
 	padding: 6px 14px;
     margin:10px;
+    float: left;
 }
-	
-
-
 
 
 /*CONTACTAME*/
@@ -385,10 +419,6 @@ header{
 	text-decoration: none;
 	color: white;
 }
-/*.contactameBoton:hover {
-	background-color: #5C0120;
-}
-*/
 
 /*FOOTER*/
 footer{

@@ -49,7 +49,7 @@ function maquina(contenedor,texto,intervalo){
       }},intervalo);
 };
 
-var texto = "Mi nombre es Carol Madeleine y creo que el diseño no tiene límites, donde sea que lo hagamos";
+var texto = "Mi nombre es Carol Madeleine y sé que el diseño no tiene límites, donde sea que lo hagamos";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 maquina("informacionAbout",texto,100);
 
