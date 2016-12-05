@@ -4,6 +4,16 @@
 	}
 	
 }
+@media screen and (max-width : 1120px) {
+	.barras-habilidades{
+		display: block;
+	}
+	.habilidades{
+		display: none;
+	}
+	
+	
+}
 /*@media screen and (min-width : 1020px) {
 	.contenedor{
 		display: none;

@@ -8,10 +8,15 @@
 //   imagePath:"path/customizedImage.gif" // Si quieres puedes insertar una imagen personalizada
 // });
 
-$(document).ready(function(){
-                $(".fakeloader").fakeLoader({
-                    timeToHide:1200,
-                    bgColor:"#1abc9c",
-                    spinner:"spinner6"
-                });
-            });
+// $(document).ready(function(){
+//                 $(".fakeloader").fakeLoader({
+//                     timeToHide:1200,
+//                     bgColor:"#1abc9c",
+//                     spinner:"spinner6"
+//                 });
+//             });
+
+ // $(document).ready(function(){
+ //      $('.slider').slider({full_width: true});
+ //    });
+        

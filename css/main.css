@@ -6,8 +6,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-	background-color: #6C131D;
+	background-color: black;
 }
+
+/*parallax*/
+.parallax-container {
+    height: 200px;
+}
+        
 
 /*Header*/
 header{
@@ -98,20 +104,43 @@ header{
 }
 
 /*ABOUT ME*/
+
+
+
+
+
+
+
+
+/*ABOUT ME*/
 .aboutMeMenu{
 	text-align: center;
 	padding: 20% 8%;
 	height: 100vh;
 }
-.aboutMeMenuCambio{
-	padding: 0;
-}
 .informacionAbout{
 	color: white;
 	font-size: 40px;
 }
+.cerrarBoton{
+	padding: 12px 48px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	margin:30px 0;
+	color: white;
+	font-size: 18px;
+}
+.aboutMeMenuCambio{
+	padding:0;
+}
+.info{
+	background-color: black;
+	height: 100vh;
+	margin: 4% 18%;
+}
 
-.colorBlue{
+/*.colorBlue{
 	color: white;
 	font-size: 1.2rem;
 	margin: 40px 100px;
@@ -119,8 +148,8 @@ header{
 .colorBlue::selection{
   background: #6C131D;
   color: white;
-}
-.aboutBotton{
+}*/
+/*.aboutBotton{
   padding: 14px 80px;
   background-color: #2E294E;
   color: white;
@@ -146,19 +175,11 @@ header{
 }
 .foto{
 	width: 100%;
-}
-.cerrarBoton{
-	padding: 12px 48px;
-	background-color: transparent;
-	border-radius: 4px;
-	border: 1px solid white;
-	margin:30px 0;
-	color: white;
-	font-size: 18px;
-}
+}*/
+
 
 /*HOVER*/
-.overlay:hover .frase{
+/*.overlay:hover .frase{
 	opacity: 0.8;
 	background-color: red;
 	color: white;
@@ -176,11 +197,11 @@ header{
 .iconoInfo{
 	font-size: 40px;
 	margin-bottom: 4px;
-}
+}*/
 
 
 /*ABOUT ME*/
-.contenedorFoto{
+/*.contenedorFoto{
 	width: 100%;
 	margin-bottom: 44px;
 	text-align: center;
@@ -221,14 +242,16 @@ header{
 	transition: background-color 0.25s;
 	-webkit-transition: 1.2s;
 }
-
+.over-titulo{
+	font-size: 2rem;
+}
 .frase{
 	opacity: 0;
 	position: absolute;
 	top: 0;
 	font-size: 16px;
 }
-
+*/
 
 /*HOVER*/
 /*.overlay:hover .frase{
@@ -264,12 +287,6 @@ header{
 	text-align: center;
 	padding: 16px 0;
 }
-/*.tituloHabilidades{
-	margin:60px 0 30px 0;
-	font-size: 40px;
-	color: white;
-	font-weight: bold;
-}*/
 .logoContenedor{
 	height: 240px;
     max-width: 300px;
@@ -366,6 +383,23 @@ header{
     margin:10px;
     float: left;
 }
+
+/*BARRA-HABILIDADES*/
+.barras-habilidades{
+	height: 100vh;
+	padding: 10% 14%;
+}
+.span-web{
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin: 0 10px; 
+}
+.progress{
+	height: 26px;
+}
+
+
+
 
 
 /*CONTACTAME*/

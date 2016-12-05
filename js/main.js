@@ -1,3 +1,33 @@
+
+$('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+
+$(document).ready(function(){
+    $(".on").click(function(){
+        $(".contenedor").slideDown(0);
+            $(".contenedor").slideToggle(3000);
+    $(".off").click(function(){
+        $(".contenedor").stop();
+            $(".contenedor").slideDown(2000);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $('.slider').slider({full_width: true});
+  });
+      
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        
+
+
 window.addEventListener("load", function(){
   var iconoMenu = document.getElementById("iconoMenu");
   var iconoCruz = document.getElementById("iconoCruz");
@@ -54,24 +84,6 @@ var texto = "Mi nombre es Carol Madeleine y sé que el diseño no tiene límites
 maquina("informacionAbout",texto,100);
 
 
-$('.button-collapse').sideNav({
-      menuWidth: 240, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens
-    }
-  );
-
-$(document).ready(function(){
-    $(".on").click(function(){
-        $(".contenedor").slideDown(0);
-            $(".contenedor").slideToggle(3000);
-    $(".off").click(function(){
-        $(".contenedor").stop();
-            $(".contenedor").slideDown(2000);
-        });
-    });
-});
 
 
 
