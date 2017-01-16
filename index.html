@@ -6,16 +6,17 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-		<link rel="shortcut icon" href="image/lyft-icono.ico">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/hover-pro.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/style.css">
 	  <link rel="stylesheet" type="text/css" href="css/component.css" />
-	  <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css" /> -->
+	  <link rel="stylesheet" type="text/css" href="css/animate.css">
 	  <link rel="stylesheet" type="text/css" href="css/hover.css">
+	  <link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/set1.css" />
 	  <link rel="stylesheet" type="text/css" href="css/main.css">
-	  <link rel="shortcut icon" href="image/icono.ico">
+	  <link rel="shortcut icon" href="image/logo-icono.ico">
 	</head>
 	<body>
 		<header>
@@ -25,111 +26,177 @@
 		</header>
 		<section class="fondo jumbotron">
 			<div class="content">
-			  <div id="large-header" class="large-header">
-			      <canvas id="demo-canvas"></canvas>
-						<img src="image/nombre-02-01.png" alt="" class="nombre main-title1">
-			      <span class="main main2">Front End Developer,</span><br>
-						<span class="main main3">Graphic Designer</span><br>
-						<span class="main main4">and Mom</span><br>
-			  </div> 
-	    </div>
+				<div id="large-header" class="large-header">
+				    <canvas id="demo-canvas"></canvas>
+					<img src="image/logo.grande-trasnparente-01.png" alt="" class="nombre main-title1">
+					<div class="cont-info">
+						<div class="info-fondo" id="info-fondo"></div>
+					</div>
+				</div> 
+	    	</div>
 		</section>
 		<section class="menu">
 			<ul id="slide-out" class="side-nav menu">
 				<div class="logoColor">
-		    	<img src="image/logo-02.png" class="logoMenu">
+		    	<img src="image/logo.blanco-menu-02.png" class="logoMenu">
 		    </div>
-		    <li><a href="#aboutMeMenu">Acerca de mí</a></li>
-		    <li><a href="#proyectos">Proyectos</a></li>
-		    <li><a href="#habilidades">Mis Habilidades</a></li>
-		    <li><a href="#contactame">Contáctame</a></li>
+		    <li><a href="#aboutMeMenu" class="hvr-bob" >Acerca de mí</a></li>
+		    <li><a href="#proyectos" class="hvr-bob">Proyectos</a></li>
+		    <li><a href="#habilidades" class="hvr-bob">Mis Habilidades</a></li>
+		    <li><a href="#contactame" class="hvr-bob">Contáctame</a></li>
 		    <hr class="linea">
   			</ul>
   		</section>
 		<section class="aboutMeMenu" id="aboutMeMenu">
-			<div class="textoAbout" id="textoAbout">
-				<div class="informacionAbout" id="informacionAbout"></div>
-				<button class="cerrarBoton hvr-float-shadow" id="aboutBotton">Más sobre mí...</button>
+			<div class="contenedor-about">
+				<div class="textoAbout-nombre" id="textoAbout">
+					<strong>Mi nombre es Carol Madeleine Juárez</strong>
+				</div>
+				<div class="textoAbout-info" id="textoAbout">
+					Soy Diseñadora Gráfica, Desarrolladora Web y Mamá<br>Creo en crear, de cualquier manera que elijas definir eso.
+				</div>
+				<br><a href=""><button class="contactameBoton hvr-float-shadow" id="aboutBotton">Más sobre mí...<span class="icon-info-large-outline"></span></button></a>
 			</div>
-			<section class="info hidden" id="infoAbout">
+			<div class="info hidden" id="infoAbout">
+				<div class="contenedor">
+					<div class="row">
+		                <div class="col-sm-4">
+		                  <!-- normal -->
+		                  <div class="ih-item circle effect1"><a href="#">
+		                      <div class="spinner"></div>
+		                      <div class="img"><img src="images/assets/2.jpg" alt="img"></div>
+		                      <div class="info">
+		                        <div class="info-back">
+		                          <h3>Heading here</h3>
+		                          <p>Description goes here</p>
+		                        </div>
+		                      </div></a></div>
+		                  <!-- end normal -->
+		                </div>
+		                <div class="col-sm-4">
+		                  <!-- colored -->
+		                  <div class="ih-item circle colored effect1"><a href="#">
+		                      <div class="spinner"></div>
+		                      <div class="img"><img src="images/assets/5.jpg" alt="img"></div>
+		                      <div class="info">
+		                        <div class="info-back">
+		                          <h3>Heading here</h3>
+		                          <p>Description goes here</p>
+		                        </div>
+		                      </div></a></div>
+		                  <!-- end colored -->
+		                </div>
+		                <div class="col-sm-4">
+		                  <!-- colored -->
+		                  <div class="ih-item circle colored effect1"><a href="#">
+		                      <div class="spinner"></div>
+		                      <div class="img"><img src="images/assets/5.jpg" alt="img"></div>
+		                      <div class="info">
+		                        <div class="info-back">
+		                          <h3>Heading here</h3>
+		                          <p>Description goes here</p>
+		                        </div>
+		                      </div></a></div>
+		                  <!-- end colored -->
+		                </div>
+	              	</div>
+				</div>
 				<button class="cerrarBoton" id="botonCerrar">
 					<i class="icon-cross2"></i>Cerrar
 				</button>
-				<div class="slider">
-				   <ul class="slides">
-				      <li>
-				        <img src="image/primera.jpg">
-				        <div class="caption center-align">
-				          <h3>Diseñadora Gráfica</h3>
-				          <h5 class="light grey-text text-lighten-3">Estudié previamente en el Instituto de Diseño y Comunicaciones</h5>
-				        </div>
-				      </li>
-				      <li>
-				        <img src="image/about/lab.jpg">
-				        <div class="caption left-align">
-				          <h3>Desarrolladora Front End</h3>
-				          <h5 class="light grey-text text-lighten-3">Estudio actualmente en Laboratoria para convertirme en una Full Stack</h5>
-				        </div>
-				      </li>
-				      <li>
-				        <img src="image/about/mama.jpg">
-				        <div class="caption right-align">
-				          <h3>Mamá</h3>
-				          <h5 class="light grey-text text-lighten-3">Me gusta trabajar, estudiar y muchas cosas más pero sobre todo soy mamá y si puedo demostrale que yo puedo, imagínate a lo que llegará él.</h5>
-				        </div>
-				      </li>
-				   </ul>
-				</div>
-			</section>
+			</div>
 		</section>
 			<div class="parallax-container">
-		      <div class="parallax"><img src="image/dos.jpg"></div>
+		      <div class="parallax"><img src="image/OAYTOW0.jpg" class="imagen-parallax"></div>
 		    </div>
 		<section class="proyectos" id="proyectos">
 			<div class="container-fluid">
+				<h2>Proyectos</h2>
 				<div class="content">
-					<h2 class="tituloProyecto">Proyectos</h2>
 					<div class="grid">
-						<figure class="effect-sadie">
-							<img src="image/proyectos/twitter.png" alt="img02"/>
-							<figcaption>
-								<h2>Proyecto <span>TWITTER</span></h2>
-								<p>Herramientas usadas:<br>HTML-CSS-JAVASCRIPT</p>
-								<a href="https://carolmadeleine.github.io/twitter-js/">View more</a>
-							</figcaption>			
-						</figure>
-						<figure class="effect-sadie">
-							<img src="image/proyectos/tumblr.png" alt="img14"/>
-							<figcaption>
-								<h2>Proyecto <span>TUMBLR</span></h2>
-								<p>Herramientas usadas: <br>HTML-CSS-JAVASCRIPT</p>
-								<a href="https://carolmadeleine.github.io/tumblr-monster.inc/">View more</a>
-							</figcaption>			
-						</figure>
-						<figure class="effect-sadie">
-							<img src="image/proyectos/responsive-blog.png" alt="img02"/>
-							<figcaption>
-								<h2>Proyecto <span>RESPONSIVE BLOG</span></h2>
-								<p>Herramientas usadas: <br>HTML-CSS</p>
-								<a href="https://carolmadeleine.github.io/Responsive-Blog/">View more</a>
-							</figcaption>			
-						</figure>
-						<figure class="effect-sadie">
-							<img src="image/proyectos/trello.png" alt="img14"/>
+						<figure class="effect-zoe">
+							<img src="image/proyectos/trello.png" alt="img25"/>
 							<figcaption>
 								<h2>Proyecto <span>TRELLO</span></h2>
-								<p>Herramientas usadas: <br>HTML-CSS-JAVASCRIPT</p>
-								<a href="https://carolmadeleine.github.io/trello-dd/">View more</a>
-							</figcaption>			
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-14 iconoCon"></i>
+									<i class="icon-icon-13 iconoCon"></i>
+									<i class="icon-icon-15 iconoCon"></i>
+								</p>
+								<p class="description">Página creada en similitud de un gestor de tareas llamado TRELLO</p>
+							</figcaption>	
+						</figure>
+						<figure class="effect-zoe">
+							<img src="image/proyectos/tumblr.png" alt="img25"/>
+							<figcaption>
+								<h2>Proyecto <span>TUMBLR</span></h2>
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-14 iconoCon"></i>
+									<i class="icon-icon-13 iconoCon"></i>
+									<i class="icon-icon-15 iconoCon"></i>
+								</p>
+								<p class="description">Página creada en similitud de una plataforma de microblogging que permite a sus usuarios publicar textos, imágenes,  enlaces, citas llamada tumblr.</p>
+							</figcaption>	
+						</figure>
+					</div>
+					<div class="grid">
+						<figure class="effect-zoe">
+							<img src="image/proyectos/twitter.png" alt="img25"/>
+							<figcaption>
+								<h2>Proyecto <span>TWITTER</span></h2>
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-14 iconoCon"></i>
+									<i class="icon-icon-13 iconoCon"></i>
+									<i class="icon-icon-15 iconoCon"></i>
+								</p>
+								<p class="description">Página creada en similitud  a la red social muy conocida llamada TWITTER en la cual se puede postear publiaciones de solo texto.</p>
+							</figcaption>	
+						</figure>
+						<figure class="effect-zoe">
+							<img src="image/proyectos/responsive-blog.png" alt="img25"/>
+							<figcaption>
+								<h2>Proyecto <span>BLOG</span></h2>
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-14 iconoCon"></i>
+									<i class="icon-icon-13 iconoCon"></i>
+								</p>
+								<p class="description">Página creada simulando un blog.</p>
+							</figcaption>	
+						</figure>
+					</div>
+					<div class="grid">
+						<figure class="effect-zoe">
+							<img src="image/proyectos/trello.png" alt="img25"/>
+							<figcaption>
+								<h2>Proyecto <span>AIRBNB</span></h2>
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-14 iconoCon"></i>
+									<i class="icon-icon-13 iconoCon"></i>
+									<i class="icon-icon-15 iconoCon"></i>
+								</p>
+								<p class="description">Página creada en similitud de un gestor de tareas llamado TRELLO</p>
+							</figcaption>	
+						</figure>
+						<figure class="effect-zoe">
+							<img src="image/proyectos/granulo.jpg" alt="img25"/>
+							<figcaption>
+								<h2>Proyecto <span>GRÁNULO</span></h2>
+								<p class="icon-links figcap-icons">
+									<i class="icon-icon-09 iconoCon"></i>
+									<i class="icon-icon-10 iconoCon"></i>
+									<i class="icon-icon-11 iconoCon"></i>
+								</p>
+								<p class="description">Naming, desarrollo y proceso y reingeniería de la imagen y logo Gránulo.</p>
+							</figcaption>	
 						</figure>
 					</div>
 				</div>
 			</div>
 		</section>
 			<div class="parallax-container">
-		      <div class="parallax"><img src="image/dos.jpg"></div>
+		      <div class="parallax"><img src="image/OAYTOW0.jpg" class="imagen-parallax"></div>
 		    </div>
-		<section class="habilidades" id="habilidades">
+		<!-- <section class="habilidades" id="habilidades">
 			<h2 class="tituloProyecto">Habilidades</h2>
 			<div class="botones-hab" id="botones-hab">
 				<button class="cerrarBoton botton-o hvr-float-shadow on" id="">ON</button>
@@ -240,37 +307,33 @@
 	  		<div class="progress">
 	      	<div class="determinate" style="width: 20%; background-color:#0868AB"><span class="span-web">JQuery</span></div>
 	  		</div>
-		</section>
+		</section> -->
 		<section class="contactame text-center" id="contactame">
-			<div class="opacityContac">
-				<div class="container-fluid">
-					<div class="contacto">
-						<h2 class="tituloContactame">CONTÁCTAME</h2>
-						<p class="textoContactame">Si te interesa mi trabajo, las habilidades que tengo y mi entusiasmo, supongo que soy lo que estás buscando.  ¡Pongámonos en contacto!</p><br>
-						<div class="iconosFooter">
-							<a href="mailto:karitomadeleine@gmail.com"><i class="icon-google iconoFooter" id="iconoFooter"></i></a>
-							<a href="https://pe.linkedin.com/in/carol-juarez" target="_black"><i class="icon-linkedin2 iconoFooter" id="iconoFooter"></i></a>
-							<a href="https://github.com/CarolMadeleine" target="_black"><i class="icon-github iconoFooter" id="iconoFooter"></i></a>
-							<a href="https://www.behance.net/CarolMadeleineJuarez" target="_black"><i class="icon-behance iconoFooter" id="iconoFooter"></i></a><br><br>
-							<i class="icon-mail iconoCon"></i><span class="textoContac-2">karitomadeleine@gmail.com</span><br>
-							<i class="icon-phone_iphone iconoCon"></i><span class="textoContac-2">965 975 744</span>
-						</div><br><br>
-						<p class="textoContac-2">Te invito a descargar mi Cv</p>
-						<a href="image/cv-carito.pdf" target="_black" class="hvr-float-shadow">
-							<button class="contactameBoton">Puedes verlo acá <span class="icon-file"></span></button><br>
-						</a><br>
-						<!-- <span>Español |</span>
-						<span>Ingles</span><br> -->
-					</div>		
-				</div>
-			</div>
+			<div class="container-fluid">
+				<div class="contacto">
+					<h2 class="tituloContactame">CONTÁCTAME</h2>
+					<p class="textoContactame">Si te interesa mi trabajo, las habilidades que tengo y mi entusiasmo,<br> soy lo que estás buscando.<br> ¡Pongámonos en contacto!</p><br>
+					<div class="iconosFooter">
+						<a href="mailto:karitomadeleine@gmail.com"><i class="icon-google3 iconoFooter" id="iconoFooter"></i></a>
+						<a href="https://pe.linkedin.com/in/carol-juarez" target="_black"><i class="icon-linkedin2 iconoFooter" id="iconoFooter"></i></a>
+						<a href="https://github.com/CarolMadeleine" target="_black"><i class="icon-github iconoFooter" id="iconoFooter"></i></a>
+						<a href="https://www.behance.net/CarolMadeleineJuarez" target="_black"><i class="icon-behance iconoFooter" id="iconoFooter"></i></a><br><br>
+						<i class="icon-mail iconoCon"></i><span class="textoContac-2">karitomadeleine@gmail.com</span><br>
+						<i class="icon-device-phone iconoCon"></i><span class="textoContac-2">962 839 046</span>
+					</div><br><br>
+					<p class="textoContac-2">Te invito a descargar mi Cv</p>
+					<a href="image/cv-carito.pdf" target="_black">
+						<button class="contactameBoton hvr-float-shadow">Puedes verlo acá <span class="icon-document"></span></button><br>
+					</a><br>
+				</div>		
+			</div>	
 		</section>
 		<footer>
 			<p class="nombreFooter">Carol Madeleine © 2016</p>
 		</footer>
 		<!--JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="js/hamburgler.js"></script>
+		<script type="text/javascript" src="js/app-hover.js"></script>
 		<script type="text/javascript" src="js/textualizer.js"></script>
 		<script type="text/javascript" src="js/loading.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>

@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
@@ -22,28 +22,33 @@ header{
 	z-index: 100;
 }
 .iconoMenu{
-	width: 32px;
+	width: 34px;
 	margin: 26px 0 0 20px;
 }
 
 /*SECTION-FONDO*/
 .fondo{
-	background-image: url(../image/dos.jpg);
+	background-image: url(../image/uno.jpg);
 	background-size: cover;
 	margin-bottom: 0;
 	height: 100vh;
 }
 #demo-canvas{
-	height: 614px;
+	height: 712px;
 	width: 100%;
 }
-.main{ 
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	right: 2%;
+.cont-info{
+	width: 236px;
+    height: 100px;
+    position: relative;
+    bottom: 722px;
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+}
+.info-fondo{
 	color: white;
-	font-size: 1.8rem;
+	font-size: 22px;
 }
 .main-title1{
 	position: absolute;
@@ -55,36 +60,20 @@ header{
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
-.main1{
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-.main2{
-	top: 0;
-}
-.main3{
-	top: 5%;
-}
-.main4{
-	top: 10%;
-}
 .especia{
 	color: white;
 	font-size: 15px;
 	float: left;
 }
 .nombre{
-	width: 30%;
+	width: 26%;
 }
 
 
 /*MENU*/
+.side-nav{
+	background-color: black;
+}
 .logoColor{
 	margin-top: 80px;
 	margin-bottom: 50px;
@@ -94,41 +83,52 @@ header{
 	width: 50%;
 }
 .menu li a {
-	color: #5C0120;
+	color: white;
 	font-size: 20px;
 	text-decoration: none;
 }
 .linea{
-	border: 1px solid #5C0120;
+	border: 1px solid white;
 	margin: 30px 10px;
 }
 
-/*ABOUT ME*/
-
-
-
-
-
-
 
 
 /*ABOUT ME*/
+
 .aboutMeMenu{
+	background-color: #5C0120;
 	text-align: center;
-	padding: 20% 8%;
 	height: 100vh;
+	position: relative;
 }
-.informacionAbout{
+.contenedor-about{
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.textoAbout-nombre{
 	color: white;
-	font-size: 40px;
+	font-size: 2.8rem;
+}
+.textoAbout-info{
+	color: white;
+	font-size: 2rem;
 }
 .cerrarBoton{
 	padding: 12px 48px;
 	background-color: transparent;
 	border-radius: 4px;
-	border: 1px solid white;
+	border: 1px solid #5C0120;
 	margin:30px 0;
-	color: white;
+	color: #5C0120;
 	font-size: 18px;
 }
 .aboutMeMenuCambio{
@@ -140,133 +140,8 @@ header{
 	margin: 4% 18%;
 }
 
-/*.colorBlue{
-	color: white;
-	font-size: 1.2rem;
-	margin: 40px 100px;
-}
-.colorBlue::selection{
-  background: #6C131D;
-  color: white;
-}*/
-/*.aboutBotton{
-  padding: 14px 80px;
-  background-color: #2E294E;
-  color: white;
-  font-size: 18px;
-}
-.info{
-	padding: 150px 0 30px 0;
-}
-.info:hover{
-	height: 670px;
-	background-color: rgba(46,41,78,0.8);
-	transition: background-color 0.25s;
-	-webkit-transition: 1.2s;
-}
-.contenedorFoto{
-	width: 100%;
-	position: relative;
-}
-.frase{
-	opacity: 0;
-	position: absolute;
-	top: 0;
-}
-.foto{
-	width: 100%;
-}*/
 
 
-/*HOVER*/
-/*.overlay:hover .frase{
-	opacity: 0.8;
-	background-color: red;
-	color: white;
-	padding:80px 20px;
-	transition: all 0.5s ease;
-	text-align: center;
-	width: 95.2%;
-	height: 100%;
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.iconoInfo{
-	font-size: 40px;
-	margin-bottom: 4px;
-}*/
-
-
-/*ABOUT ME*/
-/*.contenedorFoto{
-	width: 100%;
-	margin-bottom: 44px;
-	text-align: center;
-}
-.foto{
-	width: 100%;
-}
-.cerrarBoton{
-	padding: 12px 48px;
-	background-color: transparent;
-	border-radius: 4px;
-	border: 1px solid white;
-	margin:30px 0;
-	color: white;
-	font-size: 18px;
-}
-.colorBlue{
-	color: white;
-	font-size: 1.5rem;
-	margin: 0 100px;
-}
-.colorBlue::selection{
-  background: #2E294E;
-  color: white;
-}
-.aboutBotton{
-  padding: 14px 80px;
-  background-color: #2E294E;
-  color: white;
-  font-size: 18px;
-}
-.info{
-	padding: 150px 0 30px 0;
-}
-.info:hover{
-	height: 670px;
-	background-color: rgba(46,41,78,0.8);
-	transition: background-color 0.25s;
-	-webkit-transition: 1.2s;
-}
-.over-titulo{
-	font-size: 2rem;
-}
-.frase{
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	font-size: 16px;
-}
-*/
-
-/*HOVER*/
-/*.overlay:hover .frase{
-	opacity: 0.8;
-	background-color: red;
-	color: white;
-	padding:50px 16px;
-	transition: all 0.5s ease;
-	text-align: center;
-	width: 93%;
-}
-.iconoInfo{
-	font-size: 40px;
-	margin-bottom: 4px;
-}*/
 
 
 /*PROYECTOS*/
@@ -279,6 +154,18 @@ header{
 	font-weight: bold;
 	text-align: center;
 }
+.imagen-parallax{
+	background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+.grid figure p{
+	margin-top: 6px;
+}
+figure.effect-zoe figcaption{
+	height: 4.75em;
+}
+
 
 
 /*HABILIDADES*/
@@ -405,30 +292,48 @@ header{
 
 /*CONTACTAME*/
 .contactame{
-	background-image: url(../image/fondo-contacto.jpg);
+	background-image: url(../image/fondo-contactame.jpg);
 	background-size: cover;
 	height: 100vh;
 	color: white;
-}
-.opacityContac{
-	opacity: 0.8;
-	background-color: #5C0120;
-	height: 100vh;
+	position: relative;
 }
 .contacto{
-	margin:60px 0 0 0;
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.contacto:before{
+	content: "";
+	position: absolute;
+	opacity: 0.8;
+	background-color: #5C0120;
+	width: 100%;
+	height: 100%;
 }
 .tituloContactame{
 	margin:30px 0;
 	font-size: 40px;
+	z-index: 1;
 }
 .textoContactame{
 	margin:24px;
 	font-size: 18px;
+	z-index: 1;
 }
 .textoContac-2{
 	margin:18px 0;
 	font-size: 16px;
+	z-index: 1;
+}
+.iconosFooter{
+	z-index: 1;
 }
 .iconoFooter{
 	font-size: 34px;
@@ -440,7 +345,7 @@ header{
 }
 .iconoCon{
 	font-size: 24px;
-	margin: 0 8px;
+	margin: 8px;
 }
 .contactameBoton{
 	padding: 14px 34px;
@@ -449,6 +354,8 @@ header{
 	border: 1px solid white;
 	margin:10px 0;
 	color: white;
+	z-index: 1;
+	font-size: 1.4em;
 }
 .contactameBoton a{
 	text-decoration: none;
@@ -482,9 +389,6 @@ footer{
 .hidden{
 	display: none;
 }
-
-
-
 
 
 
